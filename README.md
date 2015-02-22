@@ -2,10 +2,7 @@
 
 Должны быть установлены npm, bower, grunt
 
-Необходимо выполнить команды 
-
--npm install
--bower install
+Необходимо выполнить команды `-npm install && bower install`
 
 ## Build & development
 
