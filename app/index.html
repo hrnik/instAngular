@@ -52,7 +52,7 @@
     </section>
 
 
-    <script type="text/ng-template" id="/main.html">
+    <script type="text/ng-template" id="/photos.html">
         <div class="column__photo">
             <div class="row form__tag ">
                 <form class="form col-md-12 center-block">
@@ -63,8 +63,8 @@
 
             <div class="row">
                 <div class="col-md-6" ng-repeat="item in items">
-                    <img class="img__tag" width="116" height="116" ng-src="{{item.images.low_resolution.url}}" src="" alt="">
-                </div>
+                  <photo width="116" height="116" item="item"></photo>
+            </div>
             </div>
         </div>
     </script>
@@ -76,8 +76,14 @@
         </div>
         <div class="row">
             <div class="col-md-12" ng-repeat="item in items | reverse">
-                <img class="img__all" width="260" height="260" ng-src="{{item.images.low_resolution.url}}" src="" alt="">
+              <photo width="260" height="260" item="item"></photo>
             </div>
+        </div>
+    </script>
+    <script type="text/ng-template" id="/photo.html">
+        <img ng-mouseenter="show = true" ng-mouseleave="show = false" class="img__tag" width="{{width}}" height="{{height}}" ng-src="{{item.images.low_resolution.url}}" src="" alt="">
+        <div ng-show="show" class="tags">
+            <span ng-repeat="tag in item.tags" class="text-primary">{{'#'+tag}} </span>
         </div>
     </script>
 
@@ -98,6 +104,7 @@
     <script src="scripts/services/factoryallphoto.js"></script>
     <script src="scripts/filters/reverse.js"></script>
 
+    <script src="scripts/directives/photo.js"></script>
     <!-- endbuild -->
 </body>
 

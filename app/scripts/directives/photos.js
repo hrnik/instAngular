@@ -4,7 +4,7 @@
 angular.module('instangularApp')
     .directive('photos', function() {
         return {
-            templateUrl: '/main.html',
+            templateUrl: '/photos.html',
             restrict: 'E',
             scope: {
                 tag: '='

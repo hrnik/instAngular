@@ -22,19 +22,26 @@ body {
 }
 .main {
     padding-top: 30px;
+    padding-bottom: 100px;
     background: url(../images/pattern.jpg) 0 0 repeat;
 }
-
 /* Responsive: Portrait tablets and up */
 
 img {
     border: 1px solid #fff;
 }
+.tags span{
+  color:#fff;
+}
+
 .form__tag {
     margin-bottom: 20px;
 }
 .img__tag {
     margin-bottom: 10px;
+}
+.img__tag:hover, .img__all:hover {
+    cursor: pointer;
 }
 .img__all {
     margin-bottom: 20px;
