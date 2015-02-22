@@ -1,12 +1,13 @@
 # instangular
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
+Должны быть установлены npm, bower, grunt
+
+Необходимо выполнить команды 
+
+-npm install
+-bower install
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+Запустить `-grunt` для генерации билда и `-grunt serve` для развертывания локального сервера
 
-## Testing
-
-Running `grunt test` will run the unit tests with karma.
